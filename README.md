@@ -11,6 +11,7 @@ The goal is to demonstrate my practical skills in identity, networking, automati
 
 This lab includes:
 
+- Hyper-V VM Creation (DC01)
 - Windows Server 2022 Domain Controller  
 - DNS, DHCP, Group Policy  
 - File Server with NTFS and share permissions  
@@ -50,8 +51,44 @@ This lab includes:
 └─────────────────────┘
 ```
 
-
 ## 📁 Sections
+
+0. Hyper-V VM Creation (DC01)
+1. Domain Controller Deployment
+2. Organizational Unit Structure
+3. User & Group Management
+4. Group Policies
+5. DHCP Configuration
+6. File Server (SRV02)
+7. Windows 10 Domain Join
+8. PowerShell Automation
+
+---
+
+### **0. Hyper-V VM Creation (DC01)**
+This section shows the process of creating the first virtual machine in Hyper-V, which becomes the Domain Controller for lab.shaine.local.
+
+✔ Tasks Performed
+Created a new virtual machine (DC01)
+Created a new Internal switch (LAB-SWITCH)
+Assigned it to an isolated internal network (LAB-SWITCH)
+Configured virtual hardware (memory, CPU, VHDX)
+Mounted Windows Server 2022 ISO
+Prepared DC01 for OS installation
+
+📸 Screenshots → `/screenshots/hyperv/`
+- Hyper-V Manager
+- Internal Switch Creation (LAB-SWITCH)
+- VM Name & Location
+- Generation 2 Selection
+- Memory Allocation
+- LAB-SWITCH Networking
+- VHDX Setup
+- ISO Installation Source
+- VM Summary Before Creation
+- Windows Server Setup Boot Screen
+
+---
 
 ### **1. Domain Controller Deployment (DC01)**
 - Windows Server installation  
@@ -60,7 +97,7 @@ This lab includes:
 - Domain creation: `lab.shaine.local`  
 - SYSVOL and DNS verification  
 
-Screenshots → `/screenshots/ad/`
+📸 Screenshots → `/screenshots/ad/`
 
 ---
 
