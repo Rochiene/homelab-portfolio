@@ -76,17 +76,36 @@ This section shows the process of creating the first virtual machine in Hyper-V,
 - Mounted Windows Server 2022 ISO
 - Prepared DC01 for OS installation
 
-📸 Screenshots → `/screenshots/hyperv/`
+### 📸 Screenshots  
 - Hyper-V Manager
+![Hyper-V Manager](screenshots/hyperv/hyperv_manager.png)
+
 - Internal Switch Creation (LAB-SWITCH)
+![Internal Switch Creation (LAB-SWITCH)](screenshots/hyperv/internal_switch.png)
+
 - VM Name & Location
-- Generation 2 Selection
+![VM Name](screenshots/hyperv/new_vm_name.png)
+
+ - Generation 2 Selection
+![Generation 2](screenshots/hyperv/generation2.png)
+
 - Memory Allocation
+![Memory Allocation](screenshots/hyperv/memory_alloc.png)
+
 - LAB-SWITCH Networking
+![LAB-SWITCH Selection](screenshots/hyperv/network_switch.png)
+
 - VHDX Setup
+![VHDX Setup](screenshots/hyperv/vhdx_setup.png)
+
 - ISO Installation Source
+![ISO Selection](screenshots/hyperv/install_iso.png)
+
 - VM Summary Before Creation
+![VM Summary](screenshots/hyperv/vm_summary.png)
+
 - Windows Server Setup Boot Screen
+![Windows Setup](screenshots/hyperv/windows_setup.png)
 
 ---
 
