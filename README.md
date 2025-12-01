@@ -69,12 +69,12 @@ This lab includes:
 This section shows the process of creating the first virtual machine in Hyper-V, which becomes the Domain Controller for lab.shaine.local.
 
 ✔ Tasks Performed
-Created a new virtual machine (DC01)
-Created a new Internal switch (LAB-SWITCH)
-Assigned it to an isolated internal network (LAB-SWITCH)
-Configured virtual hardware (memory, CPU, VHDX)
-Mounted Windows Server 2022 ISO
-Prepared DC01 for OS installation
+- Created a new virtual machine (DC01)
+- Created a new Internal switch (LAB-SWITCH)
+- Assigned it to an isolated internal network (LAB-SWITCH)
+- Configured virtual hardware (memory, CPU, VHDX)
+- Mounted Windows Server 2022 ISO
+- Prepared DC01 for OS installation
 
 📸 Screenshots → `/screenshots/hyperv/`
 - Hyper-V Manager
