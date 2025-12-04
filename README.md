@@ -121,36 +121,25 @@ It includes static IP setup, AD DS + DNS installation, domain creation, and veri
 - Verified DNS records and SYSVOL replication
 
 ### 📸 Screenshots
+- **Server Manager – DC01 Overview**  
+  ![DC01 Server Manager](screenshots/ad/server_manager_dc01.png)
 
-- **Hyper-V Manager**
-  ![Hyper-V Manager](screenshots/hyperv/hyperv_manager.png)
+- **Static IPv4 Configuration**  
+  ![Static IP](screenshots/ad/static_ip_config.png)
 
-- **Internal Switch Creation (LAB-SWITCH)**  
-  ![Internal Switch Creation](screenshots/hyperv/internal_switch.png)
+- **AD DS + DNS Roles Installed**  
+  ![Roles Installed](screenshots/ad/server_manager_roles.png)
 
-- **VM Name & Location**  
-  ![VM Name](screenshots/hyperv/new_vm_name.png)
+- **Active Directory Users and Computers – Domain View**  
+  ![ADUC Domain](screenshots/ad/aduc_domain_view.png)
 
-- **Generation 2 Selection**  
-  ![Generation 2](screenshots/hyperv/generation2.png)
+- **DNS Forward Lookup Zone – lab.shaine.local**  
+  ![DNS Zone](screenshots/ad/dns_forward_zone.png)
 
-- **Memory Allocation**  
-  ![Memory Allocation](screenshots/hyperv/memory_alloc.png)
+- **SYSVOL Folder Verification**  
+  ![SYSVOL Folder](screenshots/ad/sysvol_folder.png)
 
-- **LAB-SWITCH Networking**  
-  ![LAB-SWITCH](screenshots/hyperv/network_switch.png)
 
-- **VHDX Setup**  
-  ![VHDX Setup](screenshots/hyperv/vhdx_setup.png)
-
-- **ISO Installation Source**  
-  ![ISO Selection](screenshots/hyperv/install_iso.png)
-
-- **VM Summary Before Creation**  
-  ![VM Summary](screenshots/hyperv/vm_summary.png)
-
-- **Windows Server Setup Boot Screen**  
-  ![Windows Setup](screenshots/hyperv/windows_setup.png)
 
 ---
 
