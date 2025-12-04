@@ -217,14 +217,17 @@ A separate admin account ensures best security practices, while a standard user 
 ---
 
 ### **4. Group Policies**
-Policies created:
-- Password policies  
-- Login banner  
-- Drive mapping  
-- Control Panel restrictions  
-- Wallpaper policy  
+This section documents the creation and configuration of essential Group Policies used to manage users and computers across the lab.shaine.local domain.
+These policies demonstrate core sysadmin skills in security hardening, user environment control, and centralized settings enforcement.
 
-Screenshots → `/screenshots/gpo/`
+✔ Tasks Performed
+- Created a Password Policy via Default Domain Policy
+- Configured a Login Banner for legal/security compliance
+- Applied a Custom Desktop Wallpaper using a GPO
+- Deployed Drive Mapping using Group Policy Preferences
+- Applied Control Panel Restrictions for standard users
+- Verified GPO application using gpresult and RSOP
+
 
 ---
 
