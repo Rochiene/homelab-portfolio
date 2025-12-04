@@ -120,24 +120,37 @@ It includes static IP setup, AD DS + DNS installation, domain creation, and veri
 - Promoted server to new forest: lab.shaine.local
 - Verified DNS records and SYSVOL replication
 
-### 📸 Screenshots 
-#### Server Manager – DC01 Overview
-![DC01 Server Manager](screenshots/ad/server_manager_dc01.png)
+### 📸 Screenshots
 
-#### Static IPv4 Configuration
-![Static IP](screenshots/ad/static_ip_config.png)
+- **Hyper-V Manager**
+  ![Hyper-V Manager](screenshots/hyperv/hyperv_manager.png)
 
-#### AD DS + DNS Installed
-![Roles](screenshots/ad/server_manager_roles.png)
+- **Internal Switch Creation (LAB-SWITCH)**  
+  ![Internal Switch Creation](screenshots/hyperv/internal_switch.png)
 
-#### ADUC – Domain View
-![ADUC Domain](screenshots/ad/aduc_domain_view.png)
+- **VM Name & Location**  
+  ![VM Name](screenshots/hyperv/new_vm_name.png)
 
-#### DNS Forward Lookup Zone
-![DNS Zone](screenshots/ad/dns_forward_zone.png)
+- **Generation 2 Selection**  
+  ![Generation 2](screenshots/hyperv/generation2.png)
 
-#### SYSVOL Verification
-![SYSVOL](screenshots/ad/sysvol_folder.png)
+- **Memory Allocation**  
+  ![Memory Allocation](screenshots/hyperv/memory_alloc.png)
+
+- **LAB-SWITCH Networking**  
+  ![LAB-SWITCH](screenshots/hyperv/network_switch.png)
+
+- **VHDX Setup**  
+  ![VHDX Setup](screenshots/hyperv/vhdx_setup.png)
+
+- **ISO Installation Source**  
+  ![ISO Selection](screenshots/hyperv/install_iso.png)
+
+- **VM Summary Before Creation**  
+  ![VM Summary](screenshots/hyperv/vm_summary.png)
+
+- **Windows Server Setup Boot Screen**  
+  ![Windows Setup](screenshots/hyperv/windows_setup.png)
 
 ---
 
@@ -166,17 +179,40 @@ lab.shaine.local
       ├── Security Groups
       └── Distribution Groups
 ```
-![ADUC_Domain_View](screenshots/ad/ou_full_structure.png)
 
+### 📸 Screenshots
+- **OU Structure (Full AD Tree Expanded)**  
+  ![OU Structure](screenshots/ad/ou_full_structure.png)
+
+- **New OU Creation Window**  
+  ![Create OU Window](screenshots/ad/ou_create.png)
 
 ---
 
 ### **3. User & Group Management**
-- Admin account creation  
-- Standard user accounts  
-- Security group creation  
+This section documents the creation of administrative and standard user accounts within the new Active Directory domain.
+A separate admin account ensures best security practices, while a standard user account allows testing of Group Policy, permissions, and workstation domain joins.
 
-Screenshots → `/screenshots/ad/`
+✔ Tasks Performed
+- Created a privileged admin account (shaine.admin)
+- Added shaine.admin to:
+- Domain Admins
+- Enterprise Admins
+- Schema Admins (lab-only)
+- Created a standard user (test.user1)
+- Placed accounts into proper Organizational Units
+- Followed enterprise identity management practices
+
+### 📸 Screenshots
+
+- **Admin Account Creation (shaine.admin)**  
+  ![Admin Account Creation](screenshots/ad/admin_account_create.png)
+
+- **Admin Account – Group Memberships**  
+  ![Admin Account Groups](screenshots/ad/admin_account_groups.png)
+
+- **Standard User Account Creation (test.user1)**  
+  ![Standard User Creation](screenshots/ad/test_user_create.png)
 
 ---
 
