@@ -110,13 +110,34 @@ This section shows the process of creating the first virtual machine in Hyper-V,
 ---
 
 ### **1. Domain Controller Deployment (DC01)**
-- Windows Server installation  
-- Static IP configuration  
-- AD DS + DNS installation  
-- Domain creation: `lab.shaine.local`  
-- SYSVOL and DNS verification  
+This section covers the installation and configuration of the Domain Controller for the lab.shaine.local domain.
+It includes static IP setup, AD DS + DNS installation, domain creation, and verification of SYSVOL and DNS health.
 
-📸 Screenshots → `/screenshots/ad/`
+✔ Tasks Performed
+- Installed Windows Server 2022
+- Assigned static IP (10.0.0.10)
+- Installed AD DS and DNS roles
+- Promoted server to new forest: lab.shaine.local
+- Verified DNS records and SYSVOL replication
+
+### 📸 Screenshots 
+#### Server Manager – DC01 Overview
+![DC01 Server Manager](screenshots/ad/server_manager_dc01.png)
+
+#### Static IPv4 Configuration
+![Static IP](screenshots/ad/static_ip_config.png)
+
+#### AD DS + DNS Installed
+![Roles](screenshots/ad/server_manager_roles.png)
+
+#### ADUC – Domain View
+![ADUC Domain](screenshots/ad/aduc_domain_view.png)
+
+#### DNS Forward Lookup Zone
+![DNS Zone](screenshots/ad/dns_forward_zone.png)
+
+#### SYSVOL Verification
+![SYSVOL](screenshots/ad/sysvol_folder.png)
 
 ---
 
