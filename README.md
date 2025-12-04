@@ -77,34 +77,34 @@ This section shows the process of creating the first virtual machine in Hyper-V,
 - Prepared DC01 for OS installation
 
 ### 📸 Screenshots  
-- Hyper-V Manager
+#### Hyper-V Manager
 ![Hyper-V Manager](screenshots/hyperv/hyperv_manager.png)
 
-- Internal Switch Creation (LAB-SWITCH)
+#### Internal Switch Creation (LAB-SWITCH)
 ![Internal Switch Creation (LAB-SWITCH)](screenshots/hyperv/internal_switch.png)
 
-- VM Name & Location
+#### VM Name & Location
 ![VM Name](screenshots/hyperv/new_vm_name.png)
 
- - Generation 2 Selection
+#### Generation 2 Selection
 ![Generation 2](screenshots/hyperv/generation2.png)
 
-- Memory Allocation
+#### Memory Allocation
 ![Memory Allocation](screenshots/hyperv/memory_alloc.png)
 
-- LAB-SWITCH Networking
+#### LAB-SWITCH Networking
 ![LAB-SWITCH Selection](screenshots/hyperv/network_switch.png)
 
-- VHDX Setup
+#### VHDX Setup
 ![VHDX Setup](screenshots/hyperv/vhdx_setup.png)
 
-- ISO Installation Source
+#### ISO Installation Source
 ![ISO Selection](screenshots/hyperv/install_iso.png)
 
-- VM Summary Before Creation
+#### VM Summary Before Creation
 ![VM Summary](screenshots/hyperv/vm_summary.png)
 
-- Windows Server Setup Boot Screen
+#### Windows Server Setup Boot Screen
 ![Windows Setup](screenshots/hyperv/windows_setup.png)
 
 ---
@@ -141,21 +141,33 @@ It includes static IP setup, AD DS + DNS installation, domain creation, and veri
 
 ---
 
-### **2. OU Structure**
-Clean enterprise-style OU layout:
+### **2. OU Unit Structure**
+This section documents the creation of a clean, professional Active Directory OU layout used to separate users, computers, groups, and administrative accounts.
+A well-designed OU structure is the foundation for scalable Group Policy management and enterprise-ready domain organization.
 
-LAB Users
-Admin Accounts
-Standard Users
-LAB Computers
-Servers
-Workstations
-LAB Groups
-Security Groups
-Distribution Groups
+✔ Tasks Performed
+- Created top-level OUs for Users, Computers, and Groups
+- Added sub-OUs for Admin Accounts, Standard Users, Servers, and Workstations
+- Adopted an enterprise-style naming standard for clear management
+- Prepared the structure for Group Policy, user provisioning, and workstation domain joins
 
+```
+lab.shaine.local
+│
+├── LAB Users
+│     ├── Admin Accounts
+│     └── Standard Users
+│
+├── LAB Computers
+│     ├── Servers
+│     └── Workstations
+│
+└── LAB Groups
+      ├── Security Groups
+      └── Distribution Groups
+```
+![ADUC_Domain_View](screenshots/ad/ou_full_structure.png)
 
-Screenshots → `/screenshots/ad/`
 
 ---
 
