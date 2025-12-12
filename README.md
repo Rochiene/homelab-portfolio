@@ -240,10 +240,36 @@ Screenshots → `/screenshots/srv02/`
 ---
 
 ### **7. Windows 10 Domain Join**
-- Domain join process  
-- User logon tests  
 
-Screenshots → `/screenshots/win10/`
+This section documents the deployment and configuration of the Windows 10 client machine (WIN10-CLI01) and its successful integration into the Active Directory domain `lab.shaine.local`.  
+A domain-joined workstation is essential for testing Group Policies, user authentication, drive mappings, NTFS permissions, and end-to-end sysadmin administration workflows.
+
+✔ **Tasks Performed**
+- Created and configured a new Windows 10 virtual machine (WIN10-CLI01)
+- Renamed the PC following standard naming conventions
+- Assigned a static IP for better lab control
+- Joined the workstation to the domain `lab.shaine.local`
+- Verified domain authentication using domain credentials
+- Prepared the workstation for GPO, login scripts, and permission testing
+
+---
+
+### 📸 Screenshots  
+
+- **WIN10-CLI01 – VM Summary in Hyper-V**  
+  ![WIN10 VM Summary](screenshots/win10/win10vm_summary.png)
+
+- **Windows 10 Installation Complete**  
+  ![WIN10 Installation Complete](screenshots/win10/win10_install_complete.png)
+
+- **PC Renamed to WIN10-CLI01**  
+  ![PC Rename](screenshots/win10/win10_rename.png)
+
+- **Static IPv4 Configuration (WIN10-CLI01)**  
+  ![Static IP](screenshots/win10/win10_static_ip.png)
+
+- **Domain Join Confirmation (lab.shaine.local)**  
+  ![Domain Join](screenshots/win10/domain_join_success.png)
 
 ---
 
