@@ -235,7 +235,7 @@ A domain-joined client is essential for testing Group Policies, permissions, log
   ![Static IP](screenshots/win10/win10_static_ip.png)
 
 - **Domain Join Process (lab.shaine.local)**  
-  ![Domain Join](screenshots/win10/win10_domain_join.png)
+  ![Domain Join](screenshots/win10/domain_join_success.png)
 
 - **WIN10-CLI01 in Active Directory (Workstations OU)**  
   ![WIN10 in AD](screenshots/win10/win10_in_ad.png)
