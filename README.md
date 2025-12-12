@@ -57,10 +57,10 @@ This lab includes:
 1. Domain Controller Deployment
 2. Organizational Unit Structure
 3. User & Group Management
-4. Group Policies
-5. DHCP Configuration
-6. File Server (SRV02)
-7. Windows 10 Domain Join
+4. Windows 10 Domain Join
+5. Group Policies
+6. DHCP Configuration
+7. File Server (SRV02)
 8. PowerShell Automation
 
 ---
@@ -204,8 +204,51 @@ A separate admin account ensures best security practices, while a standard user 
   ![Standard User Creation](screenshots/ad/test_user_create.png)
 
 ---
+### **4. Windows 10 Domain Join**
 
-### **4. Group Policies**
+This section documents the deployment and configuration of the Windows 10 workstation (WIN10-CLI01) and its successful integration into the Active Directory domain `lab.shaine.local`.  
+A domain-joined client is essential for testing Group Policies, permissions, login scripts, and real-world sysadmin workflows.
+
+✔ **Tasks Performed**
+- Created and configured the WIN10-CLI01 virtual machine
+- Completed OS installation and initial setup
+- Renamed the PC to match lab naming standards
+- Assigned a static IP address
+- Joined the workstation to the domain `lab.shaine.local`
+- Verified domain authentication
+- Confirmed the workstation object appears in the correct AD OU
+
+---
+
+### 📸 Screenshots
+
+- **WIN10-CLI01 – VM Summary in Hyper-V**  
+  ![WIN10 VM Summary](screenshots/win10/win10vm_summary.png)
+
+- **Windows 10 Installation Complete**  
+  ![WIN10 Installation Complete](screenshots/win10/win10_install_complete.png)
+
+- **PC Renamed to WIN10-CLI01**  
+  ![PC Rename](screenshots/win10/rename_win10.png)
+
+- **Static IPv4 Configuration (WIN10-CLI01)**  
+  ![Static IP](screenshots/win10/win10_static_ip.png)
+
+- **Domain Join Process (lab.shaine.local)**  
+  ![Domain Join](screenshots/win10/win10_domain_join.png)
+
+- **WIN10-CLI01 in Active Directory (Workstations OU)**  
+  ![WIN10 in AD](screenshots/win10/win10_in_ad.png)
+
+- **WIN10-CLI01 Login Screen – “Sign in to: LAB”**  
+  ![Domain Login Screen](screenshots/win10/win10_domain_login_screen.png)
+
+- **System Information Showing Domain Membership**  
+  ![System Domain](screenshots/win10/win10_system_domain.png)
+
+---
+
+### **5. Group Policies**
 This section documents the creation and configuration of essential Group Policies used to manage users and computers across the lab.shaine.local domain.
 These policies demonstrate core sysadmin skills in security hardening, user environment control, and centralized settings enforcement.
 
@@ -220,7 +263,7 @@ These policies demonstrate core sysadmin skills in security hardening, user envi
 
 ---
 
-### **5. DHCP Configuration**
+### **6. DHCP Configuration**
 - Scope creation  
 - Reservations  
 - Lease testing  
@@ -229,47 +272,13 @@ Screenshots → `/screenshots/dhcp/`
 
 ---
 
-### **6. File Server (SRV02)**
+### **7. File Server (SRV02)**
 - Shared folders  
 - NTFS vs share permissions  
 - Access-based enumeration  
 - Mapped drives via GPO  
 
 Screenshots → `/screenshots/srv02/`
-
----
-
-### **7. Windows 10 Domain Join**
-
-This section documents the deployment and configuration of the Windows 10 client machine (WIN10-CLI01) and its successful integration into the Active Directory domain `lab.shaine.local`.  
-A domain-joined workstation is essential for testing Group Policies, user authentication, drive mappings, NTFS permissions, and end-to-end sysadmin administration workflows.
-
-✔ **Tasks Performed**
-- Created and configured a new Windows 10 virtual machine (WIN10-CLI01)
-- Renamed the PC following standard naming conventions
-- Assigned a static IP for better lab control
-- Joined the workstation to the domain `lab.shaine.local`
-- Verified domain authentication using domain credentials
-- Prepared the workstation for GPO, login scripts, and permission testing
-
----
-
-### 📸 Screenshots  
-
-- **WIN10-CLI01 – VM Summary in Hyper-V**  
-  ![WIN10 VM Summary](screenshots/win10/win10vm_summary.png)
-
-- **Windows 10 Installation Complete**  
-  ![WIN10 Installation Complete](screenshots/win10/win10_install_complete.png)
-
-- **PC Renamed to WIN10-CLI01**  
-  ![PC Rename](screenshots/win10/win10_rename.png)
-
-- **Static IPv4 Configuration (WIN10-CLI01)**  
-  ![Static IP](screenshots/win10/win10_static_ip.png)
-
-- **Domain Join Confirmation (lab.shaine.local)**  
-  ![Domain Join](screenshots/win10/domain_join_success.png)
 
 ---
 
