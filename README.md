@@ -289,11 +289,32 @@ These policies reflect real-world system administration practices focused on sec
 ---
 
 ### **6. DHCP Configuration**
-- Scope creation  
-- Reservations  
-- Lease testing  
 
-Screenshots → `/screenshots/dhcp/`
+This section documents the deployment and configuration of the Dynamic Host Configuration Protocol (DHCP) role within the Active Directory environment.  
+DHCP was configured to automatically assign IP addresses to domain-joined clients, with reservations used to ensure consistent addressing for critical machines.
+
+✔ **Tasks Performed**
+- Installed the DHCP Server role on DC01  
+- Authorized the DHCP server in Active Directory  
+- Created and activated a DHCP scope  
+- Configured IP address reservations for WIN10-CLI01  
+- Verified dynamic IP assignment on the client machine  
+
+---
+
+### 📸 Screenshots
+
+- **DHCP Role Installed on DC01**  
+  ![DHCP Feature Installed](screenshots/dhcp/dhcp_feature_installed.png)
+
+- **DHCP Scope Created and Activated**  
+  ![DHCP Scope Active](screenshots/dhcp/dhcp_scope_active.png)
+
+- **DHCP Reservation for WIN10-CLI01**  
+  ![DHCP Reservation](screenshots/dhcp/dhcp_reservation_win10.png)
+
+- **WIN10-CLI01 Receiving IP Address via DHCP (ipconfig /all)**  
+  ![WIN10 DHCP Lease](screenshots/dhcp/win10_dhcp_lease_ipconfig_all.png)
 
 ---
 
