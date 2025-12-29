@@ -248,17 +248,42 @@ A domain-joined client is essential for testing Group Policies, permissions, log
 
 ---
 
-### **5. Group Policies**
-This section documents the creation and configuration of essential Group Policies used to manage users and computers across the lab.shaine.local domain.
-These policies demonstrate core sysadmin skills in security hardening, user environment control, and centralized settings enforcement.
+### **5. Group Policies (GPO)**
 
-✔ Tasks Performed
-- Created a Password Policy via Default Domain Policy
-- Configured a Login Banner for legal/security compliance
-- Applied a Custom Desktop Wallpaper using a GPO
-- Deployed Drive Mapping using Group Policy Preferences
-- Applied Control Panel Restrictions for standard users
-- Verified GPO application using gpresult and RSOP
+This section documents the creation and configuration of core Group Policies used to enforce security baselines, standardize user environments, and centrally manage domain-joined systems within `lab.shaine.local`.  
+These policies reflect real-world system administration practices focused on security hardening and workstation control.
+
+✔ **Tasks Performed**
+- Configured password and account security policies  
+- Implemented a login banner for legal and security compliance  
+- Applied desktop wallpaper policy via GPO  
+- Created security baseline policies for servers, workstations, and users  
+- Verified policies through Group Policy Management  
+
+---
+
+### 📸 Screenshots
+
+- **Password Policy Configuration**  
+  ![Password Policy](screenshots/gpo/password_policy.png)
+
+- **Login Banner Configuration (GPO Settings)**  
+  ![Login Banner GPO](screenshots/gpo/gpo-login-banner.png)
+
+- **Login Banner Applied on Client Machine**  
+  ![Login Banner Result](screenshots/gpo/login_banner.png)
+
+- **Desktop Wallpaper Policy Configuration**  
+  ![Wallpaper Policy](screenshots/gpo/wallpaper_policy.png)
+
+- **Server Security Baseline Policy**  
+  ![Server Hardening](screenshots/gpo/Server-Hardening.png)
+
+- **Workstation Security Baseline Policy**  
+  ![Workstation Baseline](screenshots/gpo/Workstation-Baseline.png)
+
+- **User Security Baseline Policy**  
+  ![User Security Baseline](screenshots/gpo/User-Security-Baseline.png)
 
 
 ---
