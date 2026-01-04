@@ -250,39 +250,53 @@ A domain-joined client is essential for testing Group Policies, permissions, log
 
 ### **5. Group Policies (GPO)**
 
-This section documents the creation and configuration of core Group Policies used to enforce security baselines, standardize user environments, and centrally manage domain-joined systems within `lab.shaine.local`.  
-These policies reflect real-world system administration practices focused on security hardening and workstation control.
+This section documents the creation, configuration, and validation of Group Policies used to enforce security baselines, manage user environments, and centrally control domain-joined systems within `lab.shaine.local`.  
+Both policy-side configuration and client-side results are captured to demonstrate end-to-end GPO implementation.
 
 ✔ **Tasks Performed**
-- Configured password and account security policies  
+- Configured password and account security policies via Default Domain Policy  
 - Implemented a login banner for legal and security compliance  
-- Applied desktop wallpaper policy via GPO  
-- Created security baseline policies for servers, workstations, and users  
-- Verified policies through Group Policy Management  
+- Created drive mapping using Group Policy Preferences (GPP)  
+- Applied Control Panel restrictions for standard users  
+- Deployed desktop wallpaper via GPO  
+- Implemented security baseline GPOs for servers, workstations, and users  
+- Verified policy application on client machine (WIN10-CLI01)  
 
 ---
 
 ### 📸 Screenshots
 
-- **Password Policy Configuration**  
+- **Password Policy Configuration (Default Domain Policy)**  
   ![Password Policy](screenshots/gpo/password_policy.png)
 
-- **Login Banner Configuration (GPO Settings)**  
+- **Login Banner GPO Configuration**  
   ![Login Banner GPO](screenshots/gpo/gpo-login-banner.png)
 
-- **Login Banner Applied on Client Machine**  
+- **Login Banner Applied on Client (WIN10-CLI01)**  
   ![Login Banner Result](screenshots/gpo/login_banner.png)
+
+- **Drive Mapping GPO Configuration (Group Policy Preferences)**  
+  ![Drive Mapping Created](screenshots/gpo/gpo-drive-mapping-created.png)
+
+- **Client Drive Mapping Applied Successfully**  
+  ![Drive Mapping Success](screenshots/gpo/client-drive-mapping-success.png)
+
+- **Control Panel Restrictions – GPO Configuration**  
+  ![Control Panel Configuration](screenshots/gpo/gpo_control_panel_configuration.png)
+
+- **Control Panel Restrictions – Security Filtering / Scope**  
+  ![Control Panel Filtering](screenshots/gpo/gpo_control_panel_security_filtering.png)
 
 - **Desktop Wallpaper Policy Configuration**  
   ![Wallpaper Policy](screenshots/gpo/wallpaper_policy.png)
 
-- **Server Security Baseline Policy**  
+- **Server Security Baseline GPO**  
   ![Server Hardening](screenshots/gpo/Server-Hardening.png)
 
-- **Workstation Security Baseline Policy**  
+- **Workstation Security Baseline GPO**  
   ![Workstation Baseline](screenshots/gpo/Workstation-Baseline.png)
 
-- **User Security Baseline Policy**  
+- **User Security Baseline GPO**  
   ![User Security Baseline](screenshots/gpo/User-Security-Baseline.png)
 
 
